@@ -35,7 +35,9 @@
 #include <stdlib.h>
 #include <sys/types.h>
 #include <sys/param.h>
+#if !defined(__APPLE__)
 #include <malloc_np.h>
+#endif
 #include "c.h"
 
 /* keep debug messages? */
