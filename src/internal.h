@@ -33,7 +33,9 @@
 #define __INTERNAL_H
 
 #include <stdlib.h>
+#if !defined(__APPLE__)
 #include <malloc_np.h>
+#endif
 #include <time.h>
 
 #include "px.h"
